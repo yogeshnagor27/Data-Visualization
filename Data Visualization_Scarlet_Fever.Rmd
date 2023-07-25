@@ -1,0 +1,360 @@
+---
+title: "A Data Visualization study of Scarlet Fever in the US states of New York, Ohio and Pennsylvania"
+output: html_document
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+Subject : Data Visualization\
+course: Master's In Applied Computer Science\
+Name: Venkat Vadlamudi\
+Matriculation number :12100521\
+Mail id: venkat.vadlamudi@stud.th-deg.de\
+Name: Yogesh Nagor\
+Matriculation number :00815160\
+Mail id: yogesh.nagor@stud.th-deg.de\
+
+## 1. Overview 
+<p style='text-align: justify;'>
+Scarlet fever is a bacterial infection that mainly affects children. It usually causes a typical rash, fever and a sore throat. It’s still important to try to stop it from spreading to other people, though. One thing you can do is wash your hands often. Unlike with many other childhood diseases, having had scarlet fever in the past doesn't make you immune to future scarlet fever infections. So people can have it more than once in their lives.
+</p>
+
+
+## 2. Introduction
+<p style='text-align: justify;'>
+Scarlatina, or scarlet fever, is an infectious condition brought on by the Group A streptococcus (GAS) Streptococcus pyogenes.The illness is a specific sort of Group A streptococcal infection. Between the ages of five and fifteen, children are most frequently affected. A sore throat, fever, headache, swollen lymph nodes, and a distinctive rash are some of the warning signs and symptoms. The rash is red and blanching, and the face is flushed. The tongue may be red and rough, and it typically feels like sandpaper.The exotoxins produced by S. pyogenes cause capillary injury, which leads to the rash. It could be difficult to see the rash on skin with darker pigmentation.
+</p>
+
+<p style='text-align: justify;'>
+Few persons with strep throat or streptococcal skin infections go on to develop scarlet fever. People typically spread the bacterium by sneezing or coughing. Additionally, it can be transmitted when a person touches something with the bacteria on it before touching their mouth or nose. Swabs of the throat are often cultured to confirm the diagnosis. Scarlet fever is not prevented by a vaccination.Prevention measures include routine hand washing, not sharing personal belongings, and avoiding contact with others when ill.Antibiotics can be used to treat the illness since they stop the spread of the illness' symptoms and the majority of its problems.If treated, scarlet fever usually has positive outcomes.Scarlet fever can cause long-term consequences such kidney failure, rheumatic fever, and arthritis.
+</p>
+
+<p style='text-align: justify;'>
+In the early 20th century it was a leading cause of death in children, but even before the Second World War and the introduction o antibiotics, its severity was already declining, perhaps due to better living conditions, the introduction of better control measures, or a decline in the virulence of the bacteria.
+</p>
+
+<p style='text-align: justify;'>
+In recent years, there have been signs of antibiotic resistance; there was an outbreak in Hong Kong in 2011 and in the UK in 2014, and occurrence of the disease rose by 68% in the UK between 2014 and 2018. Research published in October 2020 showed that infection of the bacterium by three viruses has led to more virulent strains of the bacterium.
+</p>
+
+### 2.1 Symptoms of Scarlet Fever
+Before the rash develops, scarlet fever can cause a variety of symptoms in your child including:
+<body>
+    <ul>
+      <li>Fever</li>
+      <li>Sore Throat</li>
+      <li>Headache</li>
+      <li>Chills</li>
+      <li>Vommiting</li>
+      <li>Stomach Ache</li>
+      <li>Coated White Tounge</li>
+    </ul>
+</body>
+<p style='text-align: justify;'>
+The rash begins about one to two days after the initial infection. The red, fine, "sandpaper-like" rash is usually found on the neck, forehead, cheeks, and chest, and then may spread to the arms and back. The rash usually begins to fade after three to four days.
+</p>
+
+### 2.3 Prevention
+<p style='text-align: justify;'>
+Taking antibiotics regularly is one way to stop getting group A streptococcal infections in the future. Only those with comorbidities such repeated acute rheumatic fever bouts or rheumatic heart disease should use this approach. Since there are numerous subtypes of group A streptococci that might cause the infection, antibiotics have a limited capacity to prevent these infections.
+</p>
+
+
+### 2.4 Treatment
+<p style='text-align: justify;'>
+The group A streptococcal vaccine strategy has a higher chance of successfully preventing illnesses since vaccine formulations can target several subtypes of the bacteria. George and Gladys Dick created a vaccine in 1924, however it was later abandoned[when?] due to insufficient effectiveness and the development of antibiotics. The wide range of group A streptococci strains found in the environment and the length of time and manpower required for adequate testing for the safety and efficacy of any possible vaccine create challenges in the development of vaccines. In the recent years, there have been numerous attempts to develop a vaccine.
+</p>
+
+<p style='text-align: justify;'>
+Penicillin V, which is used orally, is the preferred antibiotic. Children who cannot swallow tablets can be given amoxicillin, which is available in a liquid version and is similarly effective, in nations lacking a liquid Penicillin V product. The course of treatment lasts 10 days. If eating pills is not an option, benzathine penicillin G can be administered as a single intramuscular injection. A first generation cephalosporin is utilized if the patient has an allergy to the antibiotic family (beta-lactam antibiotics), of which both penicillin and amoxicillin are members. However, those who experience a Type 1 Hypersensitivity reaction when they are allergic to penicillin may still experience negative side effects with cephalosporin medications. In certain circumstances, erythromycin or clindamycin are the best options.
+</p>
+
+## 3. History of Scarlet Fever
+<p style='text-align: justify;'>
+When this illness was originally described in writing is not known. Around 400 BC, Hippocrates described the illness of a person with fever and reddish skin. The Sicilian anatomist and physician Giovanni Filippo Ingrassia's work De Tumoribus praeter Naturam, published in 1553, contains the earliest clear account of the illness in the body of medical literature. He called it rossalia. Additionally, he stressed that this presentation was distinct from the measles in terms of its traits. During an outbreak in lower Germany between 1564 and 1565, it was renamed scarlatina anginosa by Johann Weyer. De febre purpura epidemiale et contagiosa libri duo, written by Joannes Coyttarus of Poitiers and published in 1578 in Paris, was the first clear account of scarlet fever. In 1572, Daniel Sennert of Wittenberg wrote about the traditional "scarlatinal desquamation". Thomas Sydenham, an English physician, coined the phrase "scarlatina" in 1675 that has been used to describe to scarlet fever. Bad Füssing, Germany: A monument honors the three children of the innkeeper who perished in the 1858–1859 scarlet fever epidemic that struck the area. Richard Bright was the first to identify that the renal system was involved in scarlet fever in 1827. Theodor Billroth initially discussed the link between streptococci and sickness in 1874 when he talked about persons who had skin infections. Streptococcus was likewise given its genus name by Billroth. After examining the germs in the skin sores in more detail, Friedrich Julius Rosenbach changed the term to its present form, Streptococcus pyogenes, in 1884. 
+</p>
+
+<p style='text-align: justify;'>
+In 1924, a scarlet fever antitoxin was created. The development of penicillin and subsequent widespread application of it greatly decreased the fatality rate of this once-dreaded illness. By Weeks and Ferretti in 1986, the first toxin that causes this disease was cloned and sequenced and In the 2010s, it was noted that the prevalence of scarlet fever was rising in a number of nations, including England, Wales, South Korea, Vietnam, China, and Hong Kong; as of 2018, the cause remained still unknown. Additionally, cases were said to be rising once the limits were loosened as a result of the COVID pandemic, which began in 2020.
+</p>
+
+## 4. Problem Definition
+<p style='text-align: justify;'>
+Scarlet fever is a disease that has significantly evolved in definition and management over the last several hundred years. The disease, which is caused by a toxin produced by the bacteria Streptococcus pyogenes.The first notable description of what might have been scarlet fever was documented by the Sicilian physician Giovanni Filippo Ingrassia in 1553. Since September 2022, there has been a significant outbreak of scarlet fever in children in Europe, and more recently, there have been documented increases in cases in the U.S.
+</p>
+
+## 5. Objective
+<p style='text-align: justify;'>
+To understand the epidemiological pattern in the number of infections of Scarlet fever reported in the US states of New York, Ohio and Pennsylvania. Moreover to identify the similarities and dissimilarities in the trend. The various States of The United States of Americas is also tried to be ranked according to various factors such as Number of total infections, total number of deaths and it’s associated Case Fatality Rate.
+</p>
+
+## 6. Methods 
+
+The data provided includes information for all fifty US States.The top three states in terms of population density are New York, Ohio and Pennsylvania, and these three are picked as States of Interest. Furthermore, it is obvious that these states have a substantial number of infections. The accessible recordings from the 1888–1966 era were included, after which they underwent analysis. Project Tycho is where the data for the input is gathered. Particular emphasis is placed on the number of illnesses and the corresponding number of fatalities.
+
+$$
+Case\ Fatality\ Rate\  = \frac{Total\ Number\ of\ Deaths}{Total\ Number\ of\ Cases}×100
+$$
+With the aid of the above method, the Case Fatality Rate, which represents the percentage of infections to deaths for each State, can also be calculated. This will get the Case Fatality Rate per when multiplied by 100.
+
+
+#### Steps Followed
+
+1. All the Required Libraries have been loaded in the initial step. 
+
+```{r,warning=FALSE}
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
+library(plotly)
+library(maps)
+library(viridis)
+library(stringr)
+```
+
+
+2. Data filtering is done for the further process.
+
+```{r}
+projecttycho <- read.csv("C:/Users/49163/Downloads/ProjectTycho_Level2_v1.1.0_0/projecttycho.csv")
+ scarlet_fever_data <- projecttycho %>% 
+     filter(disease == "SCARLET FEVER")
+projecttycho_data<-projecttycho 
+projecttycho_data$year <- substr(projecttycho_data$epi_week, start = 1, stop = nchar(projecttycho_data$epi_week) - 2)
+scarlet_fever_data$year <- substr(scarlet_fever_data$epi_week, start = 1, stop = nchar(scarlet_fever_data$epi_week) - 2)
+
+```
+
+## Line graph
+
+3. Data Manipulation for line graph.
+We have taken filtered data of Scarlet Fever from the above filtration process and divided the data into total number of cases of three states.
+```{r}
+scarlet_fev_cases<-scarlet_fever_data
+scarlet_fev_cases<-scarlet_fev_cases%>% filter(event=="CASES")
+scarlet_fev_cases<-scarlet_fev_cases%>% filter(disease=="SCARLET FEVER")
+scarlet_3fever <- scarlet_fev_cases[scarlet_fev_cases$state %in% c("NY" , "OH" , "PA"),]
+
+aggregated_data <- scarlet_3fever %>%
+     group_by(year, state) %>%
+     summarize(Total_Cases = sum(number))
+aggregated_data$year<-as.integer(aggregated_data$year)
+```
+4. A line graph is plotted based on the cases of Scarlet Fever in the three States, New York, Ohio and Pennsylvania.
+```{r}
+aggregated_data %>%
+    ggplot( )+
+     geom_line(aes(year, 
+                  Total_Cases, 
+                 group =state, 
+                  colour = state), linewidth = 1)+
+     scale_size_manual( values = 8)+
+     geom_point(aes(year, Total_Cases, colour = state), size = 2)+
+   scale_x_continuous(
+    breaks = seq(min(aggregated_data$year), max(aggregated_data$year), by = 5)
+  ) +
+    theme_minimal()+
+     theme(axis.text.x = element_text(angle = 90))+
+ theme(legend.position = "bottom",
+       plot.caption = element_text(hjust = 0.5))+
+     labs(title = "Sum of cases in Newyork, OHIO,Pennsylvania", 
+          subtitle = "scarletfever cases", 
+          x = "Year", 
+          y = "Number of Cases", 
+          colour = "States",
+                    tag = "Fig. 1",
+          caption = "Source: US yearly Nationally  Disease Surveillance Data")
+```
+ 
+
+Fig 1. According to the graph above, New York had the most cases that year (1932), and when compared to other States, New York was always had more number of cases.
+ 
+## Box plot
+
+5. Filtered the data of Scarlet Fever in the three states with both cases and deaths to compare them using Box Plot.
+```{r}
+ boxplot<-projecttycho %>% filter(disease=="SCARLET FEVER")
+boxplot<- boxplot[boxplot$state %in% c("NY" , "OH" , "PA"),]
+```
+
+6. Grouping Data with state, Event and Total numbers.
+```{r}
+ boxplot <- boxplot %>%
+ group_by(state,event) %>%
+ summarize(TotalNumber = sum(number))
+```
+ 
+7. Box Plot is plotted with the states and total number.
+```{r}
+ ggplot(boxplot, aes(x = state, y = TotalNumber, fill = state)) +
+    geom_boxplot() +
+    scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +
+    scale_fill_brewer(palette = "Set2") + 
+    theme_clean() +
+    theme(legend.position = "none",
+          text = element_text(size = 11),
+          plot.title = element_text(size = 12, hjust=1, face = "bold"),
+          axis.text.x = element_text(hjust = 0.5),
+          axis.title = element_text(size = 12),
+          panel.grid.major = element_line(color = "black"),
+          panel.grid.minor = element_blank()) +
+    labs(title = "Deaths and Cases Distribution of Scarlet fever in New york, Ohio, Pennsylvania",
+         x = "State",
+         y = "Total Number of Casualities",tag = "Fig. 2")
+```
+
+
+
+## Bar graph
+8. Here, We manipulated the data to find out the total deaths of Scarlet Fever from 1910-1920, but there were not enough cases of death year of Scarlet Fever. So we again manipulated the data to find out other diseases like Typhoid Fever. 
+```{r}
+projecttycho_2disease<-projecttycho_data
+projecttycho_2disease <- projecttycho_2disease[projecttycho_2disease$disease %in% c("SCARLET FEVER","TYPHOID FEVER [ENTERIC FEVER]"),]
+projecttycho_2disease<-projecttycho_2disease%>% filter(event=="DEATHS")
+projecttycho_2disease <- projecttycho_2disease %>%
+    group_by(year,disease) %>%
+     summarize(TotalNumber = sum(number)) 
+projecttycho_2disease <- projecttycho_2disease %>%filter(year<=1920)
+projecttycho_2disease <- projecttycho_2disease %>%filter(year>=1910)
+```
+9. Bar graph is plotted between the deaths Typhoid and Scarlet Fever in the year from 1910-1920.
+```{r}
+projecttycho_2disease %>%
+  ggplot(aes(x = year, y = TotalNumber, fill = disease)) +
+  geom_bar(stat = "identity", width = 0.7, position = position_dodge()) +
+  labs(title = "Deaths caused by Scarlet Fever and Typhoid Fever", tag = "Fig.3") +
+  theme_economist()
+```
+
+## choropleth_map
+10. Here, data has been filtered to know which state has more number of cases of Scarlet Fever. 
+
+```{r}
+projecttycho_cases<-projecttycho_data
+projecttycho_cases<-projecttycho_cases%>% filter(event=="CASES")
+projecttycho_cases<-projecttycho_cases%>% filter(disease=="SCARLET FEVER")
+chloropeth_map_data <- projecttycho_cases %>%
+     group_by( state) %>%
+     summarize(total_cases = sum(number))
+chloropeth_map_data<- aggregate(total_cases ~ state, chloropeth_map_data,sum)     
+```
+11. A Choropleth Map has been shown and hover is created to visually represent the number of cases in each state.
+```{r}
+chloropeth_map_data$hover <- with(chloropeth_map_data, paste(state, '<br>', total_cases))
+fig1 <- chloropeth_map_data %>% 
+  plot_geo(locationmode = 'USA-states') %>%
+  add_trace(
+    z = ~total_cases, text = ~hover, locations = ~state,
+    color = ~total_cases, colors = "Blues"
+  ) %>%
+  layout( title = 'State Cases Of Scarlet Fever',tag = "Fig.4",
+    geo = list(
+      scope = 'usa',
+      projection = list(type = 'albers usa'),
+      showlakes = TRUE,
+      lakecolor = toRGB('white'))
+    )
+
+
+fig1
+ 
+```
+
+12. Here, data has been filtered to know which state has more number of deaths of Scarlet Fever. 
+
+
+```{r}
+projecttycho_deaths<-projecttycho_data
+projecttycho_deaths<-projecttycho_deaths%>% filter(event=="DEATHS")
+projecttycho_deaths<-projecttycho_deaths%>% filter(disease=="SCARLET FEVER")
+chloropeth_map1_data <- projecttycho_deaths %>%
+     group_by(state) %>%
+     summarize(Total_deaths = sum(number))
+chloropeth_map1_data<- aggregate(Total_deaths ~ state, chloropeth_map1_data, sum)     
+```
+13. A Choropleth Map has been shown and hover is created to visually represent the number of deaths in each state.
+
+```{r}
+chloropeth_map1_data$hover <- with(chloropeth_map1_data, paste(state, '<br>', Total_deaths))
+
+fig4 <- chloropeth_map1_data %>% 
+  plot_geo(locationmode = 'USA-states') %>%
+  add_trace(
+    z = ~Total_deaths, text = ~hover, locations = ~state,
+    color = ~Total_deaths, colors = "Blues"
+  ) %>%
+  layout(title = 'State Deaths Of Scarlet Fever',tag = "Fig.5",
+    geo = list(
+      scope = 'usa',
+      projection = list(type = 'albers usa'),
+      showlakes = TRUE,
+      lakecolor = toRGB('white'))
+  )
+fig4
+ 
+```
+## Barplot for fatality rate
+14. Here, we decided to take the data of Scarlet Fever cases and deaths to calculate the case fatality rate. Calculation is done based on the Scarlet Fever data of each states using the formula (total number of deaths/total number cases)*100.
+
+```{r}
+scfr1 <- projecttycho_cases %>%filter(year<1965)%>%
+    group_by(state) %>%
+    summarize(Totalcasessum = sum(number))
+scfr2 <- projecttycho_deaths %>% filter(year<1965)%>%
+    group_by(state) %>%
+    summarize(Totaldeathssum = sum(number))
+    merged_cfr_data <- merge(scfr1, scfr2, by = c("state"))
+    merged_cfr_data1 <- merged_cfr_data %>% group_by(state)  %>% mutate(Case_Fatality_Rate = (Totaldeathssum/Totalcasessum)*100) %>% arrange(-Case_Fatality_Rate)
+    merged_cfr_data1 <- merged_cfr_data1 %>% 
+    mutate_if(is.numeric,
+              round, 
+               digits = 2)
+```    
+15. Now,we have the case fatality rate in our data of each state and a Bar plot is plotted to show which state has the highest case fatality rate.
+```{r}            
+merged_cfr_data1 %>%
+  filter(Case_Fatality_Rate >= 1) %>%
+  ggplot(aes(x = reorder(state, Case_Fatality_Rate), y = Case_Fatality_Rate, fill = Case_Fatality_Rate)) +
+  geom_bar(stat = "identity", width = 0.75)+
+  geom_text(aes(label = sprintf("%.1f%%", Case_Fatality_Rate)), hjust = -0.1, color = "black") +
+  theme_minimal() +
+  labs(y = "Fatality Rate(%)", x = "State", title = "RANKING OF STATES IN CASE FATALITY RATE %",tag = "Fig. 6") +
+  theme(legend.position = "none") +
+  coord_flip() +
+  scale_fill_gradient(low = "#9966ff", high = "#000066") +
+  theme(axis.text.y = element_text(color = "black", size = 8),  
+        axis.text.x = element_text(color = "black", size = 8),  
+        axis.title = element_text(size = 12), 
+        plot.title = element_text(size = 16, hjust = 0.5, face = "bold"),
+        panel.grid.major.y = element_blank(),  
+        panel.grid.minor.x = element_blank())
+```  
+
+## 7. Discussion
+<p style='text-align: justify;'>
+Since the data was made accessible over a brief period of time, it was incredibly large and included all of the variables. It was easy to analyze correctly and visualize many stages of the Scarlet Fever in the United States. Data from three states—New York, Ohio, and Pennsylvania—have been analyzed. To know more information about scarlet fever, the case fertility rates of each state in the USA has been analysed.
+
+During the analysis stage we faced an issue while comparing the years of deaths and cases of scarlet fever, the death years were less compared to the infected years. So we compared with other diseases which were having deaths during duration of scarlet fever. Disease like typhoid fever occured during the time of scarlet fever and we discussed to plot graphs between the deaths of scarlet fever and typhoid fever.
+</p>
+
+## 8. Conclusions
+<p style='text-align: justify;'>
+The submitted data is subjected to a number of changes before being given a full analysis. For a flawless analysis, every attribute that is available is used to its fullest extent. Several plots, ranging from maps to standard graphs, are produced as a result of this investigation.
+</p>
+
+## 9. References
+<p style='text-align: justify;'>
+1. ANDREA PRINZI, PH.D., MPH, SM(ASCP) Jan. 24, 2023, Scarlet Fever: A Deadly History and How it Prevails. https://asm.org/Articles/2023/January/Scarlet-Fever-A-Deadly-History-and-How-it-Prevails
+2. Powell, KR (January 1979). "Filatow-Dukes' disease. Epidermolytic toxin-producing staphylococci as the etiologic agent of the fourth childhood exanthem". American Journal of Diseases of Children. 133 (1): 88–91. https://jamanetwork.com/journals/jamapediatrics/article-abstract/508293
+3. Michaels, Marian `G.; Williams, John V. (2023) In Zitelli, Basil J.; McIntire, Sara C.; Nowalk, Andrew J.; Garrison, Jessica (eds.). Zitelli and Davis' Atlas of Pediatric Physical Diagnosis (8th ed.). Philadelphia https://books.google.de/books?id=Wy1LEAAAQBAJ&pg=PA468&redir_esc=y#v=onepage&q&f=false
+4. TheUniversity of Pittsburgh. Project Tycho®, 2018.https://www.tycho.pitt.edu/data
+5. H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+6. Jeffrey B. Arnold (2021). ggthemes: Extra Themes, Scales and Geoms for ‘ggplot2’. R package version 4.2.4. https://CRAN.R-project.org/package=ggthemes
+7. U.S. Census Bureau, 2020 Censuses of Population and the population estimate program. https://data.ers.usda.gov/reports.aspx?ID=17827
+8. Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2021). dplyr: A Grammar of Data Manipulation. R package version 1.0.7. https://CRAN.R-project.org/package=dplyr
+9. Centers for Disease Control and Prevention, Group A Streptococcal (GAS) Disease https://www.cdc.gov/groupastrep/diseases-hcp/scarlet-fever.html
+10. UK Health Security Agency, 29 March 2019 https://www.gov.uk/government/publications/scarlet-fever-symptoms-diagnosis-treatment/scarlet-fever-factsheet
+</p>
+
